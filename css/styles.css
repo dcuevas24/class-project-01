@@ -110,3 +110,29 @@ body {
 .menu > ul > li:hover > ul > li a {
   color: #666666;
 }
+
+.content {
+  width: 1250px;
+  min-height: 1100px;
+  margin: 0 auto;
+}
+.aside {
+  width: 200px;
+  float: left;
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 2px #ccc;
+  font-family: sans-serif Arial, Helvetica;
+}
+.aside .widget {
+  width: 180px;
+  margin: 0 auto;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #333333;
+}
+.aside .widget:last-child {
+  margin-bottom: 20px;
+}
