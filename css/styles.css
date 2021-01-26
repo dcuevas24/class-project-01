@@ -47,6 +47,10 @@ a {
   font-family: "icons";
   float: left;
 }
+.clearfix {
+  float: none;
+  clear: both;
+}
 
 .header {
   min-width: 1024px;
@@ -279,4 +283,21 @@ input[type="submit"]:active {
 }
 .yellow {
   color: #d69d2a;
+}
+.history {
+  margin-top: 20px;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 40px;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  background-color: #333333;
+  font-family: sans-serif;
+  font-size: 14px;
 }
