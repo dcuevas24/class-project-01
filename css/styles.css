@@ -8,6 +8,24 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "fajala";
+  src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icons";
+  src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")
+      format("svg"),
+    url("fonts/websymbols-regular-webfont.eot");
+  src: url("fonts/websymbols-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -17,6 +35,17 @@
 
 body {
   background-image: url(../img/paven.png);
+}
+a {
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  color: #529125;
+}
+.icon {
+  margin: -2px 5px 0 0;
+  font-family: "icons";
+  float: left;
 }
 
 .header {
@@ -120,7 +149,6 @@ body {
 .sentence {
   width: 200px;
   float: left;
-  clear: both;
   margin-top: 30px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -192,11 +220,8 @@ input[type="submit"]:active {
 .widget a,
 .sentence a {
   display: block;
-  font-size: 14px;
-  text-align: left;
-  text-decoration: none;
-  color: #529125;
 }
+
 .widget a:hover,
 .sentence a:hover {
   color: #285616;
@@ -209,6 +234,49 @@ input[type="submit"]:active {
   padding: 10px;
   text-align: left;
   font-size: 14px;
+  /*clear: both;*/
 }
-.news {
+.sections {
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+}
+.sections .title {
+  margin-top: -20px;
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #ccc;
+  font-family: "fajala";
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.sections section {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-shadow: 0 0 4px #c9c9c9c9;
+  background-color: white;
+  color: #333333;
+  overflow: hidden;
+}
+.sections .article {
+  margin: 20px 10px 20px;
+}
+.sections .date {
+  font-size: 14px;
+  color: gray;
+}
+.sections .stikers .stiker-1,
+.sections .stikers .stiker-2 {
+  position: absolute;
+  margin-top: -38px;
+  z-index: 0;
+}
+.sections .stikers .stiker-2 {
+  margin-left: 860px;
+}
+.yellow {
+  color: #d69d2a;
 }
